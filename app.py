@@ -3,6 +3,8 @@ import streamlit as st
  
 # give a title to our app
 st.title('Welcome to BMI Calculator')
- 
-hobbies = st.multiselect("Hobbies: ", ['Dancing', 'Reading', 'Sports'])
-st.write("You selected", len(hobbies), 'hobbies')
+level = st.slider("Select the level", 1, 5)
+# print the level
+# format() is used to print value
+# of a variable at a specific position
+st.text('Selected: {}'.format(level))
